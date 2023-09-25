@@ -1,0 +1,120 @@
+:root{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    --color-1: #7f048a;
+    --color-2: #b194c5;
+    --color-3: #e4c4ec;
+    background-color: rgb(205, 152, 226);
+    --color-texto: black;
+    color: var(--color-texto);
+    text-align: center
+}
+
+
+@media (max-width: 100%) {
+    facet_sidebar{
+        display: none
+    }
+}
+
+.imagencv {
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 30%;
+}
+
+.imagencv img{
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+
+}
+
+h2{
+    text-align: center;
+    color: #131311d8;
+    height: 30px;
+    font-family: 'Montserrat', cursive;
+    font-weight: 30;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+#divmargin {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#diviconos {
+    font-size: 26px;
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+
+#listadoexperiencia{
+    text-align: justify;
+    text-decoration: none;
+}
+
+#mostrarCursos, #cerrarCursos, #mostrarRedes, #cerrarRedes, #mostrarHabilidades, #cerrarHabilidades{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#listados{
+    font-size: 20px;
+}
+
+.cursos{
+    font-size: 20px;
+}
+
+#Boton-Certificado{
+    background-color: var(--color-2);
+    font-family: 'Dosis';
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#contacto{
+    text-decoration: underline;
+}
+
+.progress {
+    height: 35px;
+    width: 50%;
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
+    background-color: var(--color-2);
+    margin-left: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: var(--color-3);
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--color-1);
+}
+
+#mensaje {
+    width: 250px;
+    height: 250px;
+    background-color: var(--color-3);
+  }
