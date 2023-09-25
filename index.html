@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\melar\Desktop\Proyecto CV\Media\6.jpg">
+    <!-- Open Graph data-->
+    <meta property="og:title" content="Proyecto CV"/>
+    <meta property="og:type" content="CV"/>
+    <meta property="og:url" content="   "/>
+    <meta property="og:image" content="C:\Users\melar\Desktop\Proyecto CV\Media\6.jpg"/>
+    <meta property="og:description" content="Proyecto CV para Ticmas"/>
+    <!-- Incluyendo Estilos-->
+    <link rel="stylesheet" type="text/css" href="CSS/style-index.css">
+    <!-- Importando Iconos-->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">   
+    <!-- Importando biblioteca jquery de google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+    <!-- Incluyendo fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Incluyendo Funciones-->
+    <script src="JS/JS/funciones.js"></script> 
+    <div>
+        <img src="C:\Users\melar\Desktop\Proyecto CV\Media\6.jpg" class="imagencv">
+        <h1>Melina Daiana AREAL</h1>
+        <h2><i class="las la-graduation-cap">Licenciada en Recursos Humanos</i></h2>
+        <div id="diviconos">
+            <i class="las la-user-tag" id="fechanacimiento" onclick="MostrarFechaNacimiento()"></i>      
+            <i class="las la-mobile" id="telefono" onclick="MostrarTelefono()"></i>
+            <i class="las la-map-marker" id="domicilio" onclick="MostrarDomicilio()"></i>
+            <i class="las la-id-card" id="DNI" onclick="MostrarDNI()"></i>
+        </div>
+    </div>
+    <div>
+        <h2>
+            <i class="las la-university">Titulaciones</i>
+        </h2>
+        <h3>
+            <li style="text-decoration: underline;">Licenciatura en Recursos Humanos - 2020 - <a href="https://www.uces.edu.ar/" target="_blank"> UCES </a></li>
+        </h3>
+        <h3>
+            <li >Tecnicatura en Administración y Gestión del Personal - 2017 - IFTS N°8</li>
+        </h3>
+        <h3>
+            <li >Perito Mercantil - 2009 - <a href="http://bibliotecacomercio2de1.blogspot.com/"> Dr. Antonio Bermejo</a></li>
+        </h3>
+    </div>
+    <div id="divmargin">
+        <h2>
+            <i class="las la-briefcase">Experiencia Laboral</i>
+        </h2>
+        <h3>
+            <a href="http://www.argentina.gob.ar/jefatura" target="_blank">Jefatura de Gabitene de Ministros - Actualidad</a>
+            <br>
+            <ul id="listadoexperiencia">
+                <li>Identificar los procedimientos correspondientes a la Carrera del Personal que requieren ser transformados, detectar problemáticas y proponer posibles soluciones para generar las modificaciones necesarias en dichos procesos.
+                </li>
+                <br>
+                <li>Desempeñar el rol de Secretario Técnico del Comité de Acreditación brindando la asistencia técnica necesaria para la gestión de las acciones del Comité, verificando la información del expediente, manteniendo actualizada la misma y efectuando las tramitaciones pertinentes en lo relativo a la promoción de Tramo Escalafonario.</li>
+                <br>
+                <li>Gestionar las actividades de capacitación del área participando del diseño de los cursos, como así también de la elaboración del Plan Estratégico y Anual de Capacitación.</li>
+            </ul>
+        </h3>
+        <br><br>
+        <h3>
+            <a href="https://www.argentina.gob.ar/cultura/fna" target="_blank">Fondo Nacional de las Artes - Mayo 2013 a Abril 2023</a>
+            <br>
+            <ul id="listadoexperiencia">
+                <br>
+                <li>Seguimiento y control de presentismo, mediante el control de las licencias tomadas-solicitadas, como sus justificaciones en caso de corresponder.</li>
+                <br>
+                <li>Asistencia a los agentes del organismo en materia de consulta sobre las normas que regulan la relación del empleo público, como también de las licencias que pueden usufructuar.</li>
+                <br>
+                <li>Recabar información para las novedades del mes en materia de liquidación de sueldos e informarlas al área de liquidación de sueldos.</li>
+                <br>
+                <li>Realizar certificaciones de servicios que necesite el personal.</li>
+                <li>Actualización de los legajos, mediante el módulo LUE del GDE.</li>
+            </ul>
+        </h3>
+        <br><br>
+        <h3>
+            <a href="https://radio.perfil.com/" target="_blank">Perfil S.A. (Radio) - Febrero a Octubre 2022</a>
+            <br><br>
+            <li id="listadoexperiencia">Ejecutiva de ventas</li>
+        </h3> 
+    </div>
+    <div>
+        <button onclick="mostrarCursos()" style="display:''" id="mostrarCursos"><i class="las la-book-reader"></i>Cursos</button>
+        <button onclick="cerrarCursos()" style="display:none;" id="cerrarCursos"><i class="las la-times"></i>Cerrar cursos</button>
+            <div id="informacionCursos" class="cursos" style="display:none;">
+                <ul>
+                    <i class="las la-paper-plane"> Seleccion Perfiles IT </i>
+                    <button onclick="window.open('Media/Certificado - Seleccion Perfiles IT.pdf')" 
+                    id="Boton-Certificado">Mostrar Certificado</button>
+                </ul>
+                <ul>
+                    <i class="las la-paper-plane"> Administración de Compensaciones y Beneficios </i>
+                    <button onclick="window.open('Media/Certificado - Administracion de Compensaciones y Beneficios.pdf')" 
+                    id="Boton-Certificado">Mostrar Certificado</button>
+                </ul>
+                <ul>
+                    <i class="las la-paper-plane"> Principios Básicos del Big Data </i>
+                    <button onclick="window.open('Media/Certificado - Principios Básicos de Big Data.pdf')" 
+                    id="Boton-Certificado">Mostrar Certificado</button>
+                </ul>
+                <ul>
+                    <i class="las la-paper-plane"> Big Data haciendo hablar los datos </i>
+                    <button onclick="window.open('Media/Certificado - Big Data haciendo hablar los datos (INAP).pdf')" 
+                    id="Boton-Certificado">Mostrar Certificado</button>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button onclick="mostrarRedes()" style="display:''" id="mostrarRedes"><i class="las la-hashtag"></i>Redes</button>
+            <button onclick="cerrarRedes()" style="display:none;" id="cerrarRedes"><i class="las la-times"></i>Cerrar redes</button>
+            <div id="informacionRedes" class="cursos" style="display:none;">
+                <h3>
+                    <i class="lab la-linkedin-in"><a href="https://ar.linkedin.com/in/melina-areal?original_referer=https%3A%2F%2Fwww.google.com%2F"> Linkedin </a></i>
+                </h3>
+                <h3>
+                    <i class="lab la-instagram"><a href="https://www.instagram.com/melareal/"> Instagram</a></i>
+                </h3>
+            </div>
+        </div>
+        <div>
+            <button onclick="mostrarHabilidades()" style="display:''" id="mostrarHabilidades"><i class="las la-pen-nib"></i>Habilidades</button>
+            <button onclick="cerrarHabilidades()" style="display:none;" id="cerrarHabilidades"><i class="las la-times"></i>Cerrar habilidades</button>
+            <div id="informacionHabilidades" class="cursos" style="display:none;">
+                <div class="progress">
+                    <div class="progress-bar" style="width:75%;"> 
+                        <span class="progress-bar-text">Trabajo en equipo 75%</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"> 
+                        <span class="progress-bar-text">Autodesarrollo 90%</span>
+                        </div>
+                    </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width:80%;"> 
+                        <span class="progress-bar-text">Creatividad 80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <article>
+        <h3 id="contacto">Si desea contactarse</h3>
+        <form method="get">
+            <label>Nombre y Apellido: </label>
+            <input type="text" name="nombre y apellido" placeholder="Su nombre y apellido"/>
+            <br><br>
+            <label>Empresa: </label>
+            <input type="text" name="empresa" placeholder="Nombre de la empresa">
+            <br><br>
+            <label>Mail de contacto: </label>
+            <input type="text" name="email" placeholder="Ingrese su mail"/>
+            <br><br>
+            <label>Motivo del contacto: </label>
+            <input type="text" name="asunto" placeholder="Motivo del contacto"/>
+            <br><br>
+            <input id="mensaje" type="text" maxlength="1000" placeholder="Escriba el cuerpo del mensaje"/>
+            <br><br>
+            <input type="submit" value="Enviar"/>
+    </article>
+</footer>
+</html>
